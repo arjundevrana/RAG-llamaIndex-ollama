@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    // Essential for module resolution
+    "moduleResolution": "bundler", // or "nodenext" | "node16" | "node"
+
+    // Include standard JavaScript, browser stream, and Node.js APIs.
+    "lib": ["ES2020", "DOM", "DOM.AsyncIterable"],
+    "types": ["node"],
+    "skipLibCheck": true,
+
+    // Recommended for better compatibility
+    "target": "es2020",
+    "module": "esnext"
+  }
+}

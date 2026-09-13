@@ -1,0 +1,25 @@
+{
+  "name": "llamaindex-demo",
+  "version": "1.0.0",
+  "description": "This is my first AI demeo Agent",
+  "license": "ISC",
+  "author": "Arjun Singh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@llamaindex/ollama": "^0.1.23",
+    "@llamaindex/openai": "^0.4.22",
+    "@llamaindex/workflow": "^1.1.24",
+    "dotenv": "^17.4.2",
+    "gpt-tokenizer": "^2.9.0",
+    "llamaindex": "^0.12.1",
+    "zod": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "typescript": "^7.0.2"
+  }
+}
