@@ -32,15 +32,15 @@ async function main() {
     const queryEngineDoc = indexDoc.asQueryEngine();
     const resultDoc = await queryEngineDoc.query({
         query: `Identify the 10–20 most important ideas in the entire book.
-For each idea:
-- Explain it simply
-- Explain it technically/deeply
-- Give a real-world example
-- Explain when it is useful
-- Explain its limitations`,
-    });
+                For each idea:
+                - Explain it simply
+                - Explain it technically/deeply
+                - Give a real-world example
+                - Explain when it is useful
+                - Explain its limitations`,
+            });
 
-    console.log('Word Response:', resultDoc.message.content);
+    //console.log('Word Response:', resultDoc.message.content);
 
     const pdfReader = new SimpleDirectoryReader();
     const pdfDir = resolveDataDir('pdf');
@@ -54,15 +54,15 @@ For each idea:
     const pdfQueryEngine = pdfIndex.asQueryEngine();
     const pdfResult = await pdfQueryEngine.query({
         query: `Identify the 10–20 most important ideas in the entire book.
-For each idea:
-- Explain it simply
-- Explain it technically/deeply
-- Give a real-world example
-- Explain when it is useful
-- Explain its limitations`,
-    });
+                For each idea:
+                - Explain it simply
+                - Explain it technically/deeply
+                - Give a real-world example
+                - Explain when it is useful
+                - Explain its limitations`,
+             });
 
-    console.log('PDF Response:', pdfResult.message.content);
+    //console.log('PDF Response:', pdfResult.message.content);
 
     const routerQueryEngine = RouterQueryEngine.fromDefaults({
         queryEngineTools: [
@@ -78,7 +78,8 @@ For each idea:
     });
 
     const routedResult = await routerQueryEngine.query({
-        query: 'Summarize the key investment ideas from both sources.'
+        //query: 'Summarize the key investment ideas from both sources.'
+        query: 'Summarize the key Artificial Intelligence ideas from both sources.'
     });
 
     console.log('Router Response:', routedResult.message.content);
