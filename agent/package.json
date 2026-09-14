@@ -1,0 +1,26 @@
+{
+  "name": "llamaindex-express-api",
+  "version": "1.0.0",
+  "description": "This Api read data with help of llamaIndex",
+  "license": "ISC",
+  "author": "Arjun Singh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx agent-simple.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@llamaindex/ollama": "^0.1.23",
+    "@llamaindex/readers": "^3.1.21",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "llamaindex": "^0.12.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.13.4",
+    "tsx": "^4.20.3",
+    "typescript": "^7.0.2"
+  }
+}
